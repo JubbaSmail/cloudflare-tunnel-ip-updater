@@ -36,7 +36,7 @@ namespace cloudflare_tunnel_ip_updater
 			Console.WriteLine("Checking the hostnames: " + CLOUDFLARE_TUNNEL_HOSTNAMES + " in the tunnel " + CLOUDFLARE_TUNNEL_ID);
 			CloudflareAPI cf = new CloudflareAPI(CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN, CLOUDFLARE_TUNNEL_ID, CLOUDFLARE_VIRTUAL_NET_ID);
 
-			string[] hostnames = CLOUDFLARE_TUNNEL_HOSTNAMES.Split(',');
+			string[] hostnames = CLOUDFLARE_TUNNEL_HOSTNAMES.Split(',', StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var hostname in hostnames)
             {
@@ -108,7 +108,7 @@ namespace cloudflare_tunnel_ip_updater
                 }
 				Console.WriteLine("-------------------------------");
 			}
-			Thread.Sleep(60000);
+			Thread.Sleep(120000);
 		}
 	}
 }
