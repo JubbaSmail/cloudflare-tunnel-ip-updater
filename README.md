@@ -24,14 +24,18 @@ cloudflare_tunnel_ip_updater:latest
 ## Environment Variables
 CLOUDFLARE_TUNNEL_HOSTNAMES
 > List of the private hostnames (comma separated), ex:x.example.com,y.example.com
+
 CLOUDFLARE_API_TOKEN
 > Follow Cloudflare Documentation to create the token: https://developers.cloudflare.com/api/tokens/create/, with the permessions: Cloudflare Tunnel:Edit, Cloudflare Tunnel:Read
+
 CLOUDFLARE_ACCOUNT_ID
 > Follow Cloudflare Documentation to find the account ID https://developers.cloudflare.com/fundamentals/get-started/basic-tasks/find-account-and-zone-ids/
+
 CLOUDFLARE_TUNNEL_ID
-> Can be found by running the command: ```bash cloudflared tunnel route ip list``` more details can be found here: https://github.com/cloudflare/cloudflared
+> Can be found by running the command: ```cloudflared tunnel route ip list``` more details can be found here: https://github.com/cloudflare/cloudflared
+
 CLOUDFLARE_VIRTUAL_NET_ID
-> Can be found by running the command: ```bash cloudflared tunnel route ip list``` more details can be found here: https://github.com/cloudflare/cloudflared
+> Can be found by running the command: ```cloudflared tunnel route ip list``` more details can be found here: https://github.com/cloudflare/cloudflared
 
 # License
 
