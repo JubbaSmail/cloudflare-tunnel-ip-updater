@@ -23,7 +23,7 @@ cloudflare_tunnel_ip_updater:latest
 
 ## Environment Variables
 CLOUDFLARE_TUNNEL_HOSTNAMES
-> List of the private hostnames (comma separated), ex:x.example.com,y.example.com
+> List of the private hostnames (comma separated), for example x.example.com,y.example.com
 
 CLOUDFLARE_API_TOKEN
 > Follow Cloudflare Documentation to create the token: https://developers.cloudflare.com/api/tokens/create/, with the permessions: Cloudflare Tunnel:Edit, Cloudflare Tunnel:Read
